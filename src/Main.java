@@ -2,6 +2,7 @@ import com.animal.Animal;
 import com.animal.Cat;
 import com.animal.Dog;
 import com.animal.Mammal;
+import com.car.Car;
 import com.interfaceExample.DogWalk;
 import com.interfaceExample.PersonWalk;
 import com.interfaceExample.Walkable;
@@ -124,6 +125,12 @@ public class Main {
         DogWalk dogWalk = new DogWalk("Dog", true, 4, "Cica");
         printWalk(dogWalk);
         System.out.println(dogWalk.getName());
+
+        System.out.println(" -> Working on Car class");
+
+        Car car = new Car();
+        car.accelerate(15.0D);
+        System.out.println("The car acceleration is: " + car.getSpeed());
     }
 
     private static void printShapeArea(Shape shape) {
